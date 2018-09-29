@@ -40,7 +40,8 @@ function draw() {
     push();
       noFill();
       stroke(255, 0, 150);
-      arc(0, 0, 240, 240, 0, hoursAngle);
+      strokeWeight(16);
+      arc(0, 0, 275, 275, 0, hoursAngle);
       rotate(hoursAngle);
       line(0, 0 , 60, 0);
     pop();
@@ -48,7 +49,8 @@ function draw() {
     push();
       noFill();
       stroke(0, 255, 100);
-      arc(0, 0, 260, 260, 0, minutesAngle);
+      strokeWeight(12);
+      arc(0, 0, 300, 300, 0, minutesAngle);
       rotate(minutesAngle);
       line(0, 0 , 80, 0);
     pop();
@@ -56,7 +58,8 @@ function draw() {
     push();
       noFill();
       stroke(150, 0, 255);
-      arc(0, 0, 280, 280, 0, secondsAngle);
+      strokeWeight(8);
+      arc(0, 0, 320, 320, 0, secondsAngle);
       rotate(secondsAngle);
       line(0, 0 , 100, 0);
     pop();
